@@ -1,10 +1,35 @@
-
 body {
     padding-top: 2rem;
     background-color: rgb(17, 17, 17) !important;
     color: white !important;
     /* text-align: center !important; */
 }
+
+/* Navbar */
+.navbar {
+    background-color: rgb(28, 28, 28);
+    margin: 0 15% !important;
+    border-radius: 2rem;
+}
+a {
+    color: white !important;
+}
+.img-fluid {
+    width: 50%;
+}
+.nav-link {
+    padding: 0 2rem !important;
+    color: #c1c1c1 !important;
+    font-weight: 300 !important;
+}
+.navbar-toggler-icon {
+    border: 1px solid white;
+}
+.navbar-brand {
+    margin-right: -29px !important  ;
+}
+/* Navbar end */
+
 
 .balanceContainer {
     background-color: #00ffea;
@@ -13,13 +38,13 @@ body {
     border-radius: 2rem;
     margin-bottom: 4%;
 }
-#balanceHeading, #balance {
+#balanceHeading, #balance, .nav-link {
     font-weight: 500;
     font-family: Poppins;
     font-size: 2rem;
 }
 #balance {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 4rem;
 }
 h1{
@@ -28,14 +53,14 @@ h1{
     font-family: Poppins !important;
     font-weight: 100 !important;
 }
-/* Style the search container */
+
+
+/* Search Bar */
 .search-container {
     position: relative;
     width: 200px; /* Adjust the width as needed */
     margin: 20px; /* Add margin for spacing */
 }
-
-/* Style the search bar input */
 .search-bar {
     width: 100%;
     padding: 10px;
@@ -44,10 +69,8 @@ h1{
     background: rgba(17, 17, 17); /* Adjust the transparency here */
     outline: none;
     font-size: 16px;
-    color: #000000; /* Text color */
+    color: #dcdbdb; /* Text color */
 }
-
-/* Style the search button */
 .search-button {
     position: absolute;
     top: 0;
@@ -58,35 +81,21 @@ h1{
     cursor: pointer;
     border-radius: 0 20px 20px 0;
 }
-
-/* Style the search button icon (you can replace search-icon.png with your own) */
 .search-button img {
     width: 20px;
     height: 20px;
 }
 
-/* Custom CSS for the black background */
-.navbar-black {
-    background-color: black !important;
-}
 
-/* Adjust text color for links in the navbar */
-.navbar-black .navbar-nav .nav-link {
-    color: white;
-}
 
-/* Adjust text color for the brand (logo) */
-.navbar-black .navbar-brand {
-    color: white;
-}
 .assetKeys {
     border: none !important;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
 }
 
-.price-column {
+.price-column, .bridgeActionsColumn{
     text-align: center !important;
     font-family: Poppins;
 }
@@ -104,9 +113,10 @@ h1{
 
 .col {
     padding: 10px;
-    
 }
 
+
+/* Buy sell buttons */
 .btn {
     padding: 5px 20px !important;
     font-size: 14px;
@@ -116,7 +126,7 @@ h1{
 }
 
 .btn-primary {
-    padding: 10px 20px !important;
+    padding: 10px 30px !important;
     font-family: Poppins !important;
     background-color: transparent !important; /* Change background to transparent */
     border-color: #5b5f63 !important;
@@ -129,7 +139,7 @@ h1{
 }
 
 .btn-danger {
-    padding: 10px 20px !important;
+    padding: 10px 30px !important;
     background-color: transparent !important; /* Change background to transparent */
     border-color: #5b5f63 !important;
     color: #dc3545;
@@ -141,10 +151,62 @@ h1{
 }
 
 .btn-spacing {
-    margin-right: 0.7rem;
+    margin-right: 2.2rem;
 }
 
 
+
+/* Footer */
+.footer {
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+    background-color: rgb(28, 28, 28);
+    padding: 2rem 0;
+    color: white;
+    border-radius: 2rem;
+    margin: 10% 15%;
+    font-family: Poppins;
+}
+
+.footer p {
+    padding-top: 2rem;
+    margin: 0 15%;
+    font-weight: 300;
+}
+
+.footer-nav {
+    margin: 0 15%;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.footer-nav a {
+    text-decoration: underline;
+    color: white;
+    font-weight: 300;
+}
+
+/* Add responsive styling if needed */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer p,
+    .footer-nav {
+        margin-top: 1rem;
+    }
+
+    .footer-nav li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
 
 
 
